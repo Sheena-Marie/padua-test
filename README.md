@@ -32,8 +32,18 @@ I spent some time on StackOverflow trying to work out how to put the csv data on
 
 Originally, code was reading how many columns and rows were in the csv, but it wasn't printing the data to the screen. What I was getting was something like this:
 
-| $HeaderOne    | $HeaderTwo    | $HeaderThree  |
-| :------------ | :------------ | :-----------  |
-| $row1         | $row1         | $row1         |
+| $HeaderColumn    | $HeaderColumn    | $HeaderColumn  |
+| :------------    | :------------    | :-----------   |
+| $column          | $column          | $column        |
 
-It was reading what was in there, but not telling me what the actual data was.
+It was reading what was in there, but not telling me what the actual data was. It took some time, but I finally found where the problem was. My original code read like this:
+```php
+<?php
+// code for table header here  
+
+echo '<th>$HeaderColumn</th>';
+
+// code for the columns here
+echo '<td>$column</td>';
+?>
+```
