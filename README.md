@@ -16,4 +16,8 @@ The repository with all of my practice files from this learning period can be fo
 
 One day was spent testing what I had learnt to see whether I could at least read a csv file and print the contents to the screen. Results of this can be found in my [csv-parsing-tests](https://github.com/Sheena-Marie/csv_parsing_tests) repository.
 
+During this testing period, I found a handy PHP library which was designed to parse csvs for you without you having to write all of you code. I didn't end up using it in the actual coding challenge, but it looked very helpful:
+
+[parseCSV](https://github.com/parsecsv/parsecsv-for-php)
+
 ## 25 December - 31 December
