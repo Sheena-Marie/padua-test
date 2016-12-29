@@ -22,7 +22,8 @@ During this testing period, I found a handy PHP library which was designed to pa
 
 ## 26 December - 31 December
 
-The first thing I made was the page where you upload the csv. Originally I had a connection to a database, but re-read through the task and realised that I didn't need it, so it was removed. I'm importing bootstrap externally through a link, so I placed the bootstrap links on a separate php page and added a
+The first thing I made was the page where you upload the csv. Originally I had a connection to a database, but re-read through the task and realised that I didn't need it, so it was removed. I'm importing bootstrap externally through a link, so I placed the bootstrap links on a separate php page and added:
 ```php
 <?php include 'bootstrap.php'; ?>
 ```
+to keep the code clean and easier to read. Ruby on Rails is a very strong supporter of keeping your code DRY, so I am in the practice of always looking for elements that I can put into partials that can be used in multiple areas.
