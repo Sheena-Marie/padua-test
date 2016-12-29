@@ -27,3 +27,13 @@ The first thing I made was the page where you upload the csv. Originally I had a
 <?php include 'bootstrap.php'; ?>
 ```
 to keep the code clean and easier to read. Ruby on Rails is a very strong supporter of keeping your code DRY, so I am in the practice of always looking for elements that I can put into partials that can be used in multiple areas.
+
+I spent some time on StackOverflow trying to work out how to put the csv data on the screen into a table. I found a solution that was a possibility, and spent the next few days poking at it to get it to work the way I wanted to.
+
+Originally, code was reading how many columns and rows were in the csv, but it wasn't printing the data to the screen. What I was getting was something like this:
+
+| $HeaderOne    | $HeaderTwo    | $HeaderThree  |
+| :------------ | :------------ | :-----------  |
+| $row1         | $row1         | $row1         |
+
+It was reading what was in there, but not telling me what the actual data was.
