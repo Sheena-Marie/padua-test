@@ -22,4 +22,7 @@ During this testing period, I found a handy PHP library which was designed to pa
 
 ## 26 December - 31 December
 
-The first thing I made was the page where you upload the csv. Originally I had a connection to a database, but re-read through the task and realised that I didn't need it, so it was removed. I'm importing bootstrap externally through a link, so I placed the bootstrap links on a separate php page and added an ``<?php include 'bootstrap.php' ?>``
+The first thing I made was the page where you upload the csv. Originally I had a connection to a database, but re-read through the task and realised that I didn't need it, so it was removed. I'm importing bootstrap externally through a link, so I placed the bootstrap links on a separate php page and added a
+```php
+<?php include 'bootstrap.php'; ?>
+```
