@@ -28,15 +28,17 @@ The first thing I made was the page where you upload the csv. Originally I had a
 ```
 to keep the code clean and easier to read. Ruby on Rails is a very strong supporter of keeping your code DRY, so I am in the practice of always looking for elements that I can put into partials that can be used in multiple areas.
 
-I spent some time on StackOverflow trying to work out how to put the csv data on the screen into a table. I found a solution that was a possibility, and spent the next few days poking at it to get it to work the way I wanted to.
+I spent some time on StackOverflow trying to work out how to put the csv data on the screen into a table. I found a solution that was a possibility, and spent the next few days wrangling it to get it to work the way I wanted to.
 
-Originally, code was reading how many columns and rows were in the csv, but it wasn't printing the data to the screen. What I was getting was something like this:
+Originally, what I was getting was something like this:
 
 | $HeaderColumn    | $HeaderColumn    | $HeaderColumn  |
 | :------------    | :------------    | :-----------   |
 | $column          | $column          | $column        |
 
-It was reading what was in there, but not telling me what the actual data was. It took some time, but I finally found where the problem was. My original code read like this:
+I counted how many headers, columns, and rows were in the supplied csv, it matched exactly to the $HeaderColumn/$column table that was printing on my screen, so the code was obviously reading what was in there and printing something to the screen, but it wasn't telling me what the actual data was. It took some time, but I finally found where the problem was.
+
+My original code read like this:
 ```php
 <?php
 // code for table header here  
