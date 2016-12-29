@@ -59,4 +59,4 @@ echo '<th>' . $HeaderColumn . '</th>';
 echo '<td>' . $column . '</td>';
 ?>
 ```
-I spend some time trying to figure out how to filter the data by date, but ended up getting frustrated and hitting multiple dead ends over a couple of days, so switched track to styling, which I enjoy, and documentation so that I could come back to it with fresh eyes after a few days.
+I spent some time trying to figure out how to filter the data by date, but ended up getting frustrated and hitting multiple dead ends over a couple of days, so switched track to styling, which I enjoy, and documentation so that I could come back to it with fresh eyes after a few days.
