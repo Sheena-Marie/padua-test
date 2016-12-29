@@ -1,4 +1,4 @@
-# padua-text
+# The Process
 
 Being a person that had studied Ruby and Ruby on Rails and never having learnt PHP before beginning this challenge, I first had to learn enough to complete it, or complete as much of it as I could before the due date. I had previously bought some courses in PHP through Udemy and narrowed it down to one course, [PHP for Beginners by Edwin Diaz](https://www.udemy.com/php-for-complete-beginners-includes-msql-object-oriented/learn/v4/overview).
 
@@ -20,4 +20,6 @@ During this testing period, I found a handy PHP library which was designed to pa
 
 [parseCSV](https://github.com/parsecsv/parsecsv-for-php)
 
-## 25 December - 31 December
+## 26 December - 31 December
+
+The first thing I made was the page where you upload the csv. Originally I had a connection to a database, but re-read through the task and realised that I didn't need it, so it was removed. I'm importing bootstrap externally through a link, so I placed the bootstrap links on a separate php page and added an ``<?php include 'bootstrap.php' ?>``
