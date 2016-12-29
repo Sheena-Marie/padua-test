@@ -47,3 +47,13 @@ echo '<th>$HeaderColumn</th>';
 echo '<td>$column</td>';
 ?>
 ```
+What finally fixed the problem was concatenating those two lines to look like this:
+```php
+<?php  
+// code for the table header here
+echo '<th>' . $HeaderColumn . '</th>';
+
+// code for the table columns here
+echo '<td>' . $column . '</td>';
+?>
+```
