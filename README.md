@@ -61,8 +61,12 @@ echo '<td>' . $column . '</td>';
 ```
 I spent some time trying to figure out how to filter the data by date, but ended up getting frustrated and hitting multiple dead ends over a couple of days, so switched track to styling, which I enjoy, and documentation so that I could come back to it with fresh eyes after a break.
 
+I used [Paletton](http://www.paletton.com/#uid=53H0u0k6jvH0PTk35HkaprbfkmK) to decide colours on the page and spent quite a bit of time troubleshooting how to get the css to link up to the page with PHP.
+
 ## 30 December
 
 Spent the day trying to get the _'Amount'_ column to show as currency with varied success. I've commented out the code that I have right as it's not working correctly and throwing error messages.
 
 Still no success with getting the sort by date to work. I've got some commented out code in that section where I was trialling SQL queries using `mysqli_query`.
+
+At one point in the afternoon, I realised that I hadn't taken into account what would happen if a user hit the upload button without actually selecting a file to upload. I did some searching through the [PHP documentation](http://php.net/manual/en/) and found `UPLOAD_ERR_NO_FILE` which seemed to be what I was looking for. I wrapped what I originally had in an if/else statement and had the code `die` if there wasn't anything there giving a message reminding the user to add a file before upload.
