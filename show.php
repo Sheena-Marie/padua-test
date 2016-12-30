@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Test Page</title>
-    <?php include 'extra_stuff/bootstrap.php'; ?>
-    <style> <?php include 'extra_stuff/style.css'; ?> </style>
+    <?php include 'styling/bootstrap.php'; ?>
+    <style> <?php include 'styling/style.css'; ?> </style>
   </head>
   <body>
 

@@ -70,3 +70,5 @@ Spent the day trying to get the _'Amount'_ column to show as currency with varie
 Still no success with getting the sort by date to work. I've got some commented out code in that section where I was trialling SQL queries using `mysqli_query`.
 
 At one point in the evening, I realised that I hadn't taken into account what would happen if a user hit the upload button without actually selecting a file to upload (I accidentally did it myself). I did some searching through the [PHP documentation](http://php.net/manual/en/) and found `UPLOAD_ERR_NO_FILE` which seemed to be what I was looking for. I wrapped what I originally had in an if/else statement and had the code `die` if there wasn't anything there giving a message reminding the user to add a file before upload.
+
+Finally, I copied the files from where I'd been working on them in Xampp into a directory where I could push the code up to GitHub via my terminal.
