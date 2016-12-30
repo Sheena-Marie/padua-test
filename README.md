@@ -20,7 +20,7 @@ During this testing period, I found a handy PHP library which was designed to pa
 
 [parseCSV](https://github.com/parsecsv/parsecsv-for-php)
 
-## 26 December - 31 December
+## 26 December - 29 December
 
 The first thing I made was the page where you upload the csv. Originally I had a connection to a database, but re-read through the task and realised that I didn't need it, so it was removed. I'm importing bootstrap externally through a link, so I placed the bootstrap links on a separate php page and added:
 ```php
@@ -60,3 +60,9 @@ echo '<td>' . $column . '</td>';
 ?>
 ```
 I spent some time trying to figure out how to filter the data by date, but ended up getting frustrated and hitting multiple dead ends over a couple of days, so switched track to styling, which I enjoy, and documentation so that I could come back to it with fresh eyes after a break.
+
+## 30 December
+
+Spent the day trying to get the _'Amount'_ column to show as currency with varied success. I've commented out the code that I have right as it's not working correctly and throwing error messages.
+
+Still no success with getting the sort by date to work. I've got some commented out code in that section where I was trialling SQL queries using `mysqli_query`.
