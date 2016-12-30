@@ -1,0 +1,33 @@
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #E5E7EA;
+}
+
+h3 {
+  color: #445778;
+}
+
+h4 {
+  color: #445778;
+}
+
+
+.thead {
+  color: #E2E8E7;
+  background-color: #445778;
+}
+
+.tbody {
+  background-color: #B2C5C2;
+  color: #445778;
+}
+
+.checker {
+  opacity: 0.8;
+  color: #445778;
+}
+
+.warning {
+  color: #B5825E;
+}
